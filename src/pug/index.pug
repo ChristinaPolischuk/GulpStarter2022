@@ -1,0 +1,13 @@
+extends layout/app
+
+block page
+    include chunk/header
+    h1.title Главная sss
+    p Текст
+    +icon("search", "icon-search")
+    +icon("headphones", "icon-headphones")
+    img(src="img/vintage_1.png", alt="vintage")
+    ul.news
+        each item in news
+            li= item.name
+    include chunk/footer

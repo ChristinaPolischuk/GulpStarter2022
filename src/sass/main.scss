@@ -1,0 +1,9 @@
+$base-fontsize: 18px;
+
+@mixin ph {
+  @media (max-width: 700px) {
+    @content;
+  }
+}
+
+@import "block/*.scss";

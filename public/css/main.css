@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font: 18px/1.5 Arial, sans-serif;
+  background: url("../img/vintage_2.jpg") no-repeat 0 0/cover;
+}
+
+.news {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.title {
+  text-transform: uppercase;
+  color: greenyellow;
+}
+
+@supports (-webkit-appearance:none) {
+  body {
+    background-image: url("../img/vintage_2.webp");
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    color: #ffffff;
+    background-color: #000000;
+  }
+
+  .news {
+    display: block;
+  }
+
+  .title {
+    color: darkred;
+    text-align: center;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
