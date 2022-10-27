@@ -1,5 +1,5 @@
 const mobileMenu = require("./modules/mobileMenu");
 
-document.addEventListener("DOMContentLoaded", ()=>{
+document.addEventListener("DOMContentLoaded", () => {
     mobileMenu();
 });
