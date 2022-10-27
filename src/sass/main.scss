@@ -1,9 +1,4 @@
-$base-fontsize: 18px;
-
-@mixin ph {
-  @media (max-width: 700px) {
-    @content;
-  }
-}
-
-@import "block/*.scss";
+@import "helpers/helpers";
+@import "general/general";
+@import "chunk/header";
+@import "components/components";

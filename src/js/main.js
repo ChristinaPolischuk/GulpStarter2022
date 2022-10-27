@@ -1,4 +1,5 @@
-const sum = require("./modules/sum");
+const mobileMenu = require("./modules/mobileMenu");
 
-console.log(sum(5,4));
-console.log(sum(12,5));
+document.addEventListener("DOMContentLoaded", ()=>{
+    mobileMenu();
+});
